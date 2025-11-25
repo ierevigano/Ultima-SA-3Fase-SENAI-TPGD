@@ -1,0 +1,3 @@
+repository "Raízes & Café/Raízes & Café@4674067344425@cloud"
+  path "/"
+    smartbranch "/main"
