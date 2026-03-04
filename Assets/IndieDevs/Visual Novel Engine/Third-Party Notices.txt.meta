@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: b020b60e9ca954d499a8dd125739b3cf
+TextScriptImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 322028
+  packageName: Visual Novel Engine for Unity
+  packageVersion: 2.0.0
+  assetPath: Assets/IndieDevs/Visual Novel Engine/Third-Party Notices.txt
+  uploadId: 826356

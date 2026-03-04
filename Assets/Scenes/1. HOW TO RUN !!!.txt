@@ -1,0 +1,4 @@
+1. Under the Unity menu, navigate to File/Build Profiles and click on the “Open Scene List” button.
+2. Drag and Drop all of the scenes from Assets/Indie Devs/Visual Novel Engine/Example/Scenes directory to the Scene List in the Build Profiles window. 
+3. Ensure that the MainMenu Scene is at the top.
+4. Double-click on the MainMenu Scene and hit play to see the pre-made functionality.

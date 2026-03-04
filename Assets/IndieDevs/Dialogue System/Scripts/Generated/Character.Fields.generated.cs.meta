@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 1886eff81fea8bb45a83d3cd70d6a196
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 322028
+  packageName: Visual Novel Engine for Unity
+  packageVersion: 2.0.0
+  assetPath: Assets/IndieDevs/Dialogue System/Scripts/Generated/Character.Fields.generated.cs
+  uploadId: 826356

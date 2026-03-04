@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: ec38458fbb804fa4d8833858e04f7030
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 322028
+  packageName: Visual Novel Engine for Unity
+  packageVersion: 2.0.0
+  assetPath: Assets/IndieDevs/Visual Novel Engine/Example/Prefabs/Other/Dialogue
+    Trigger.prefab
+  uploadId: 826356

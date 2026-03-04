@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 42fcbbc51d7b1f54c899bcd909f9ae8a
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 322028
+  packageName: Visual Novel Engine for Unity
+  packageVersion: 2.0.0
+  assetPath: Assets/IndieDevs/Visual Novel Engine/Example/Prefabs/Managers/Audio
+    Manager.prefab
+  uploadId: 826356

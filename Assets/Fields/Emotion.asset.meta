@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: d994cbb60b7c41c45ba114d9214dd91c
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 322028
+  packageName: Visual Novel Engine for Unity
+  packageVersion: 2.0.0
+  assetPath: Assets/IndieDevs/Visual Novel Engine/Example/Fields/Emotion.asset
+  uploadId: 826356

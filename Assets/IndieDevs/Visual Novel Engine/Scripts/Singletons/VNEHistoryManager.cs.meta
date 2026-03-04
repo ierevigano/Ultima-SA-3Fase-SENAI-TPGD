@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 0808913bf9e37c84c96ddf406e067a0e
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 322028
+  packageName: Visual Novel Engine for Unity
+  packageVersion: 2.0.0
+  assetPath: Assets/IndieDevs/Visual Novel Engine/Scripts/Singletons/VNEHistoryManager.cs
+  uploadId: 826356

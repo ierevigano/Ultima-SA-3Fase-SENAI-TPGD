@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 15e75fabe4eeb0748977ce4b3c8f2a29
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 322028
+  packageName: Visual Novel Engine for Unity
+  packageVersion: 2.0.0
+  assetPath: Assets/IndieDevs/Visual Novel Engine/Example/Scenes/SchoolGym.unity
+  uploadId: 826356

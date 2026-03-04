@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: e81986a2bf7be4e41946d8b84d9a34d6
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 322028
+  packageName: Visual Novel Engine for Unity
+  packageVersion: 2.0.0
+  assetPath: Assets/IndieDevs/Visual Novel Engine/Example/Prefabs/Characters/Kohaku.prefab
+  uploadId: 826356

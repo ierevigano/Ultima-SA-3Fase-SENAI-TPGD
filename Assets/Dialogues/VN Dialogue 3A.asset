@@ -1,0 +1,621 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7460348231566825783
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6160f032e709754da478093a781d78f, type: 3}
+  m_Name: DialogueSystem.CustomFieldSO
+  m_EditorClassIdentifier: 
+  emotionValue: 1
+  positionValue: 0
+  stringFields:
+    items: []
+  intFields:
+    items: []
+  floatFields:
+    items: []
+  boolFields:
+    items: []
+  vector2Fields:
+    items: []
+  vector3Fields:
+    items: []
+  spriteFields:
+    items: []
+  gameObjectFields:
+    items: []
+  audioClipFields:
+    items: []
+  dialogueTreeFields:
+    items: []
+--- !u!114 &-7140787442065900874
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6160f032e709754da478093a781d78f, type: 3}
+  m_Name: DialogueSystem.CustomFieldSO
+  m_EditorClassIdentifier: 
+  emotionValue: 0
+  positionValue: 0
+  stringFields:
+    items: []
+  intFields:
+    items: []
+  floatFields:
+    items: []
+  boolFields:
+    items: []
+  vector2Fields:
+    items: []
+  vector3Fields:
+    items: []
+  spriteFields:
+    items: []
+  gameObjectFields:
+    items: []
+  audioClipFields:
+    items: []
+  dialogueTreeFields:
+    items: []
+--- !u!114 &-2014808428103220676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef5203a8d111a414fa4bd699c4c56ae1, type: 3}
+  m_Name: End Node
+  m_EditorClassIdentifier: 
+  guid: 392fa0cad575b5c40b1ed7955651f039
+  position: {x: 2293.2002, y: -29.59999}
+  tree: {fileID: 11400000}
+  customFieldSO: {fileID: -1528022348517308676}
+  nodeID: cfa6c826-b145-4af1-9ac4-d0c0c8b43ec1
+  nextDialogue: {fileID: 11400000}
+--- !u!114 &-1835861595636352504
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6160f032e709754da478093a781d78f, type: 3}
+  m_Name: DialogueSystem.CustomFieldSO
+  m_EditorClassIdentifier: 
+  emotionValue: 0
+  positionValue: 0
+  stringFields:
+    items: []
+  intFields:
+    items: []
+  floatFields:
+    items: []
+  boolFields:
+    items: []
+  vector2Fields:
+    items: []
+  vector3Fields:
+    items: []
+  spriteFields:
+    items: []
+  gameObjectFields:
+    items: []
+  audioClipFields:
+    items: []
+  dialogueTreeFields:
+    items: []
+--- !u!114 &-1528022348517308676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6160f032e709754da478093a781d78f, type: 3}
+  m_Name: DialogueSystem.CustomFieldSO
+  m_EditorClassIdentifier: 
+  emotionValue: 0
+  positionValue: 0
+  stringFields:
+    items: []
+  intFields:
+    items: []
+  floatFields:
+    items: []
+  boolFields:
+    items: []
+  vector2Fields:
+    items: []
+  vector3Fields:
+    items: []
+  spriteFields:
+    items: []
+  gameObjectFields:
+    items: []
+  audioClipFields:
+    items: []
+  dialogueTreeFields:
+    items: []
+--- !u!114 &-624620118331989829
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 579d9ab60cbcc4547b41eeed62b59450, type: 3}
+  m_Name: Start Node
+  m_EditorClassIdentifier: 
+  guid: fea76d7c0dd6b7b4c841c231b6e034b5
+  position: {x: 19.999992, y: -22.400002}
+  tree: {fileID: 11400000}
+  customFieldSO: {fileID: 1932384660595797195}
+  nodeID: a89a3fac-ded3-4f9d-8753-d6c98dccb660
+  child: {fileID: 8722547331822977494}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 251c12e3471aae3468873f85cc1d8d9c, type: 3}
+  m_Name: VN Dialogue 3A
+  m_EditorClassIdentifier: 
+  dialogueID: ca217c8d1cad7bb4684d8407f020dcbd
+  startNode: {fileID: -624620118331989829}
+  nodes:
+  - {fileID: -624620118331989829}
+  - {fileID: 8722547331822977494}
+  - {fileID: 2116194866756774778}
+  - {fileID: 1219354082784907485}
+  - {fileID: 211072738084435383}
+  - {fileID: -2014808428103220676}
+  - {fileID: 1056958673087760076}
+--- !u!114 &211072738084435383
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e31b4410c3712e4a9aa21372a79ac52, type: 3}
+  m_Name: Dialogue Node
+  m_EditorClassIdentifier: 
+  guid: 01ebad98a4cf711478bfe59d455d09db
+  position: {x: 1464, y: -26}
+  tree: {fileID: 11400000}
+  customFieldSO: {fileID: 8521711551190649462}
+  nodeID: 8d43ecb4-f943-4c79-a3db-e72466cab6f4
+  speaker: {fileID: 5148584771725474655}
+  messages:
+    items:
+    - Key: 0
+      Value: Together!
+    - Key: 1
+      Value: "\xA1Juntos!"
+  listeners: []
+  child: {fileID: 1056958673087760076}
+--- !u!114 &1056958673087760076
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4043f12cfa2f16f43b095f6f838fb921, type: 3}
+  m_Name: Event Node
+  m_EditorClassIdentifier: 
+  guid: cad1dab7cd7c0014fa841df0c3569a0b
+  position: {x: 1869.2003, y: -28}
+  tree: {fileID: 11400000}
+  customFieldSO: {fileID: 5649619842667653432}
+  nodeID: cd10aafa-04d3-4339-98eb-92624ad77f58
+  dialogueEvent: 5
+  child: {fileID: -2014808428103220676}
+--- !u!114 &1219354082784907485
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e31b4410c3712e4a9aa21372a79ac52, type: 3}
+  m_Name: Dialogue Node
+  m_EditorClassIdentifier: 
+  guid: 622f85d6c587a5a4694b09e5cbce3b17
+  position: {x: 1027.81, y: -22.399971}
+  tree: {fileID: 11400000}
+  customFieldSO: {fileID: 4375324723657694241}
+  nodeID: 0c3b2392-b3c2-461c-92a5-bbfa4db1e9f9
+  speaker: {fileID: 3499868206686187952}
+  messages:
+    items:
+    - Key: 0
+      Value: "Let\u2019s do better next time."
+    - Key: 1
+      Value: "Hag\xE1moslo mejor la pr\xF3xima vez."
+  listeners: []
+  child: {fileID: 211072738084435383}
+--- !u!114 &1932384660595797195
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6160f032e709754da478093a781d78f, type: 3}
+  m_Name: DialogueSystem.CustomFieldSO
+  m_EditorClassIdentifier: 
+  emotionValue: 0
+  positionValue: 0
+  stringFields:
+    items: []
+  intFields:
+    items: []
+  floatFields:
+    items: []
+  boolFields:
+    items: []
+  vector2Fields:
+    items: []
+  vector3Fields:
+    items: []
+  spriteFields:
+    items: []
+  gameObjectFields:
+    items: []
+  audioClipFields:
+    items: []
+  dialogueTreeFields:
+    items: []
+--- !u!114 &2116194866756774778
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e31b4410c3712e4a9aa21372a79ac52, type: 3}
+  m_Name: Dialogue Node
+  m_EditorClassIdentifier: 
+  guid: 6267f9354a1b48446b334586d4f880a4
+  position: {x: 604.7999, y: -17.599998}
+  tree: {fileID: 11400000}
+  customFieldSO: {fileID: -7140787442065900874}
+  nodeID: 22e28ed3-5f0d-4b01-aaac-4672856db008
+  speaker: {fileID: 4778330867819448195}
+  messages:
+    items:
+    - Key: 0
+      Value: Thanks for understanding.
+    - Key: 1
+      Value: Gracias por entender.
+  listeners: []
+  child: {fileID: 1219354082784907485}
+--- !u!114 &3499868206686187952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cccfefcaa74d6af4c9819570d95910bf, type: 3}
+  m_Name: DialogueSystem.CharacterInternal
+  m_EditorClassIdentifier: 
+  characterName: Chinatsu
+  customFieldSO: {fileID: 8991724759024670635}
+  tree: {fileID: 11400000}
+  node: {fileID: 1219354082784907485}
+--- !u!114 &3621624751483797531
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cccfefcaa74d6af4c9819570d95910bf, type: 3}
+  m_Name: DialogueSystem.CharacterInternal
+  m_EditorClassIdentifier: 
+  characterName: 
+  customFieldSO: {fileID: 5041294490021891876}
+  tree: {fileID: 11400000}
+  node: {fileID: 8722547331822977494}
+--- !u!114 &4375324723657694241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6160f032e709754da478093a781d78f, type: 3}
+  m_Name: DialogueSystem.CustomFieldSO
+  m_EditorClassIdentifier: 
+  emotionValue: 0
+  positionValue: 0
+  stringFields:
+    items: []
+  intFields:
+    items: []
+  floatFields:
+    items: []
+  boolFields:
+    items: []
+  vector2Fields:
+    items: []
+  vector3Fields:
+    items: []
+  spriteFields:
+    items: []
+  gameObjectFields:
+    items: []
+  audioClipFields:
+    items: []
+  dialogueTreeFields:
+    items: []
+--- !u!114 &4511624419073746284
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6160f032e709754da478093a781d78f, type: 3}
+  m_Name: DialogueSystem.CustomFieldSO
+  m_EditorClassIdentifier: 
+  emotionValue: 1
+  positionValue: 0
+  stringFields:
+    items: []
+  intFields:
+    items: []
+  floatFields:
+    items: []
+  boolFields:
+    items: []
+  vector2Fields:
+    items: []
+  vector3Fields:
+    items: []
+  spriteFields:
+    items: []
+  gameObjectFields:
+    items: []
+  audioClipFields:
+    items: []
+  dialogueTreeFields:
+    items: []
+--- !u!114 &4778330867819448195
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cccfefcaa74d6af4c9819570d95910bf, type: 3}
+  m_Name: DialogueSystem.CharacterInternal
+  m_EditorClassIdentifier: 
+  characterName: Tomomi
+  customFieldSO: {fileID: -7460348231566825783}
+  tree: {fileID: 11400000}
+  node: {fileID: 2116194866756774778}
+--- !u!114 &5041294490021891876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6160f032e709754da478093a781d78f, type: 3}
+  m_Name: DialogueSystem.CustomFieldSO
+  m_EditorClassIdentifier: 
+  emotionValue: 0
+  positionValue: 0
+  stringFields:
+    items: []
+  intFields:
+    items: []
+  floatFields:
+    items: []
+  boolFields:
+    items: []
+  vector2Fields:
+    items: []
+  vector3Fields:
+    items: []
+  spriteFields:
+    items: []
+  gameObjectFields:
+    items: []
+  audioClipFields:
+    items: []
+  dialogueTreeFields:
+    items: []
+--- !u!114 &5148584771725474655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cccfefcaa74d6af4c9819570d95910bf, type: 3}
+  m_Name: DialogueSystem.CharacterInternal
+  m_EditorClassIdentifier: 
+  characterName: Kohaku
+  customFieldSO: {fileID: 4511624419073746284}
+  tree: {fileID: 11400000}
+  node: {fileID: 211072738084435383}
+--- !u!114 &5649619842667653432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6160f032e709754da478093a781d78f, type: 3}
+  m_Name: DialogueSystem.CustomFieldSO
+  m_EditorClassIdentifier: 
+  emotionValue: 0
+  positionValue: 0
+  stringFields:
+    items: []
+  intFields:
+    items: []
+  floatFields:
+    items: []
+  boolFields:
+    items: []
+  vector2Fields:
+    items: []
+  vector3Fields:
+    items: []
+  spriteFields:
+    items: []
+  gameObjectFields:
+    items: []
+  audioClipFields:
+    items: []
+  dialogueTreeFields:
+    items: []
+--- !u!114 &8521711551190649462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6160f032e709754da478093a781d78f, type: 3}
+  m_Name: DialogueSystem.CustomFieldSO
+  m_EditorClassIdentifier: 
+  emotionValue: 0
+  positionValue: 0
+  stringFields:
+    items: []
+  intFields:
+    items: []
+  floatFields:
+    items: []
+  boolFields:
+    items: []
+  vector2Fields:
+    items: []
+  vector3Fields:
+    items: []
+  spriteFields:
+    items: []
+  gameObjectFields:
+    items: []
+  audioClipFields:
+    items: []
+  dialogueTreeFields:
+    items: []
+--- !u!114 &8722547331822977494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e31b4410c3712e4a9aa21372a79ac52, type: 3}
+  m_Name: Dialogue Node
+  m_EditorClassIdentifier: 
+  guid: f838300f823c0cd45a3fca767971f47e
+  position: {x: 169, y: -25.600018}
+  tree: {fileID: 11400000}
+  customFieldSO: {fileID: -1835861595636352504}
+  nodeID: e4eefb60-08e3-4168-885d-bb773a968319
+  speaker: {fileID: 3621624751483797531}
+  messages:
+    items:
+    - Key: 0
+      Value: The group found a moment of peace in the chaos.
+    - Key: 1
+      Value: "El grupo encontr\xF3 un momento de paz en medio del caos."
+  listeners: []
+  child: {fileID: 2116194866756774778}
+--- !u!114 &8991724759024670635
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6160f032e709754da478093a781d78f, type: 3}
+  m_Name: DialogueSystem.CustomFieldSO
+  m_EditorClassIdentifier: 
+  emotionValue: 0
+  positionValue: 1
+  stringFields:
+    items: []
+  intFields:
+    items: []
+  floatFields:
+    items: []
+  boolFields:
+    items: []
+  vector2Fields:
+    items: []
+  vector3Fields:
+    items: []
+  spriteFields:
+    items: []
+  gameObjectFields:
+    items: []
+  audioClipFields:
+    items: []
+  dialogueTreeFields:
+    items: []

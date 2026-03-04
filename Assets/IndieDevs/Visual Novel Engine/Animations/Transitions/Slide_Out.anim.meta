@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: b431365f8eeb3a44eb6523a1e2c57685
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 322028
+  packageName: Visual Novel Engine for Unity
+  packageVersion: 2.0.0
+  assetPath: Assets/IndieDevs/Visual Novel Engine/Animations/Transitions/Slide_Out.anim
+  uploadId: 826356

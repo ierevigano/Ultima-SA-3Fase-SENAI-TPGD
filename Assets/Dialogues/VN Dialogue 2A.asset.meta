@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 97771465cb9556c41bace43a4de3fe55
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 322028
+  packageName: Visual Novel Engine for Unity
+  packageVersion: 2.0.0
+  assetPath: Assets/IndieDevs/Visual Novel Engine/Example/Dialogues/VN Dialogue 2A.asset
+  uploadId: 826356

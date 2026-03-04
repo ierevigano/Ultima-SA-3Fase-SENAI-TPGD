@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: afcd845b31015f944884135c859400de
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 322028
+  packageName: Visual Novel Engine for Unity
+  packageVersion: 2.0.0
+  assetPath: Assets/IndieDevs/Visual Novel Engine/Example/Scenes/House.unity
+  uploadId: 826356

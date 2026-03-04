@@ -1,0 +1,21 @@
+THIRD-PARTY NOTICES
+====================
+
+This package includes third-party content licensed under the following terms:
+
+1. Free Visual Novel Backgrounds (Starter Pack)
+   Author: Potat0Master
+   License: Royalty free
+   Source: https://potat0master.itch.io/free-visual-novel-backgrounds-starter-pack
+
+2. Free Characters for Visual Novels (Set A01) - School Ver.
+   Author: Potat0Master
+   License: Royalty free
+   Source: https://potat0master.itch.io/free-characters-for-visual-novels-set-a01
+
+3. Free PD
+   Author: Kevin MacLeod
+   License: CC0
+   Source: https://freepd.com/
+
+For more details, refer to the respective license agreements linked above.

@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28c060a3bf823f34f9cb03bb1115cfbb, type: 3}
+  m_Name: DialogueSettings
+  m_EditorClassIdentifier: 
+  dialogueTree: {fileID: 11400000, guid: 97771465cb9556c41bace43a4de3fe55, type: 2}
+  characters:
+  - Chinatsu
+  - Kohaku
+  - Tomomi
+  characterFields:
+  - {fileID: 11400000, guid: d994cbb60b7c41c45ba114d9214dd91c, type: 2}
+  - {fileID: 11400000, guid: 1bb4e8275820c7d45a373c8a2b2084bf, type: 2}
+  - {fileID: 11400000, guid: 8b0827e7daffc0349baeee0d7d7b03e0, type: 2}
+  dialogueEvents:
+  - Open_Beach
+  - Open_House
+  - Open_School_Gym
+  - Open_School_Stairs
+  - Open_Street
+  - Open_The_End
+  dialogueStringVariables: []
+  dialogueIntVariables: []
+  dialogueFloatVariables: []
+  dialogueBoolVariables: []
+  dialogueNodeFields:
+  - {fileID: 11400000, guid: 619a5d9752c03c14aac9406dfc605cd0, type: 2}
+  - {fileID: 11400000, guid: f26378954a85f0245a812ec7264d0b5d, type: 2}
+  choiceNodeFields:
+  - {fileID: 11400000, guid: 619a5d9752c03c14aac9406dfc605cd0, type: 2}
+  choiceFields: []
+  ifNodeFields: []
+  eventNodeFields: []
+  endNodeFields: []
+  languages:
+  - English
+  - Spanish
+  language: 0
+  fieldSORegistry:
+  - {fileID: 11400000, guid: 619a5d9752c03c14aac9406dfc605cd0, type: 2}
+  - {fileID: 11400000, guid: d994cbb60b7c41c45ba114d9214dd91c, type: 2}
+  - {fileID: 11400000, guid: 1bb4e8275820c7d45a373c8a2b2084bf, type: 2}
+  - {fileID: 11400000, guid: 8b0827e7daffc0349baeee0d7d7b03e0, type: 2}
+  - {fileID: 11400000, guid: f26378954a85f0245a812ec7264d0b5d, type: 2}

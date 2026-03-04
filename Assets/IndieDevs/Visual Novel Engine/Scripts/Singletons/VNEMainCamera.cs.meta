@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: b3802cf1ad47e6a44a4c86b87f182c32
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 322028
+  packageName: Visual Novel Engine for Unity
+  packageVersion: 2.0.0
+  assetPath: Assets/IndieDevs/Visual Novel Engine/Scripts/Singletons/VNEMainCamera.cs
+  uploadId: 826356

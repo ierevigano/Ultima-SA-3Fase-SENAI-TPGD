@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 697c27e9293a15f4bb6c2686933ca48e
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 322028
+  packageName: Visual Novel Engine for Unity
+  packageVersion: 2.0.0
+  assetPath: Assets/IndieDevs/Visual Novel Engine/Example/Prefabs/Characters/Tomomi.prefab
+  uploadId: 826356

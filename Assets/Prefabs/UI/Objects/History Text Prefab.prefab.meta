@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 70ec3ceb96cec894e9db45e5b402572d
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 322028
+  packageName: Visual Novel Engine for Unity
+  packageVersion: 2.0.0
+  assetPath: Assets/IndieDevs/Visual Novel Engine/Example/Prefabs/UI/Objects/History
+    Text Prefab.prefab
+  uploadId: 826356

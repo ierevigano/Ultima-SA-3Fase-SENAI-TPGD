@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 4cf2cfac9daff1d47a69aec0ef88e171
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 322028
+  packageName: Visual Novel Engine for Unity
+  packageVersion: 2.0.0
+  assetPath: Assets/IndieDevs/Visual Novel Engine/Animations/Transitions/Stage_Out.anim
+  uploadId: 826356

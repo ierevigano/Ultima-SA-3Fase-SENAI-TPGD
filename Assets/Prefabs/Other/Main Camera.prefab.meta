@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 2aa40a70a2bb2da4f807db66bd4c14a8
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 322028
+  packageName: Visual Novel Engine for Unity
+  packageVersion: 2.0.0
+  assetPath: Assets/IndieDevs/Visual Novel Engine/Example/Prefabs/Other/Main Camera.prefab
+  uploadId: 826356

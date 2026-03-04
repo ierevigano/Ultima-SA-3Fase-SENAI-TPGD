@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 7e3dfde409ad2d54fb6ff9cb357f506d
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 322028
+  packageName: Visual Novel Engine for Unity
+  packageVersion: 2.0.0
+  assetPath: Assets/IndieDevs/Visual Novel Engine/Scripts/Serializable/EmotionItem.cs
+  uploadId: 826356

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 2e20859b8198242418f02efc69cf4978
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 322028
+  packageName: Visual Novel Engine for Unity
+  packageVersion: 2.0.0
+  assetPath: Assets/IndieDevs/Visual Novel Engine/Animations/Transitions/Slide_In.anim
+  uploadId: 826356

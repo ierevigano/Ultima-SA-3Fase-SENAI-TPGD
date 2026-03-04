@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 473217fb5003539439a368e05a014129
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 322028
+  packageName: Visual Novel Engine for Unity
+  packageVersion: 2.0.0
+  assetPath: Assets/IndieDevs/Visual Novel Engine/Example/Prefabs/Managers/Save Manager.prefab
+  uploadId: 826356

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 619a5d9752c03c14aac9406dfc605cd0
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 322028
+  packageName: Visual Novel Engine for Unity
+  packageVersion: 2.0.0
+  assetPath: Assets/IndieDevs/Visual Novel Engine/Example/Fields/Audio.asset
+  uploadId: 826356

@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: b533c537527ad3e4e90df9453b6a223e
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 322028
+  packageName: Visual Novel Engine for Unity
+  packageVersion: 2.0.0
+  assetPath: Assets/IndieDevs/Dialogue System/Scripts/Generated/Enums/Emotion.cs
+  uploadId: 826356

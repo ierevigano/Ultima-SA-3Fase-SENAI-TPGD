@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: cc997cef8fb3ee545b53ba1c4d5c8c4e
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 322028
+  packageName: Visual Novel Engine for Unity
+  packageVersion: 2.0.0
+  assetPath: Assets/IndieDevs/Visual Novel Engine/Example/Prefabs/Characters/Chinatsu.prefab
+  uploadId: 826356
