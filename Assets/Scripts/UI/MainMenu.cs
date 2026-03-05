@@ -61,6 +61,13 @@ public class MainMenu : MonoBehaviour
     /// </summary>
     public void OnQuitClicked()
     {
-        gameManager.QuitGame();
+        if (gameManager != null)
+        {
+            gameManager.QuitGame();
+        }
+        else
+        {
+            Debug.LogWarning("GameManager is not initialized. Unable to quit.");
+        }
     }
 }

@@ -17,21 +17,26 @@ namespace DialogueSystem
         public void OnEmotionChanged(Enum value)
         {
             emotionValue = (Emotion)value;
-            Save();
+            OnValueChanged();
         }
         public void OnPoseChanged(Enum value)
         {
             poseValue = (Pose)value;
-            Save();
+            OnValueChanged();
         }
         public void OnPositionChanged(Enum value)
         {
             positionValue = (Position)value;
-            Save();
+            OnValueChanged();
         }
+
+        /// <summary>
+        /// Called when a value changes. Override in partial class to implement custom behavior.
+        /// </summary>
+        partial void OnValueChanged();
 #endif
 
-        public Enum GetEnumValue(FieldSO fieldSO)
+        public Enum GetEnumValue(DialogueSystem.FieldSO fieldSO)
         {
             if (fieldSO.label == nameof(Emotion))
             {

@@ -17,5 +17,9 @@ public class DialogueTrigger : MonoBehaviour
         {
             dialogueUIManager.StartDialogue();
         }
+        else
+        {
+            Debug.LogWarning("VNDialogueUIManager.Instance is null. DialogueTrigger cannot start dialogue.");
+        }
     }
 }

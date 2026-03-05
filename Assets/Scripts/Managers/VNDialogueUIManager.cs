@@ -84,6 +84,13 @@ public class VNDialogueUIManager : DialogueUIManager
         saveManager = SaveManager.Instance;
         sceneTransitionManager = SceneTransitionManager.Instance;
         historyManager = HistoryManager.Instance;
+        
+        // Initialize dialogue manager from base class
+        FindDialogueManager();
+        if (dialogueManager == null)
+        {
+            dialogueManager = FindObjectOfType<DialogueManager>();
+        }
 
         if (gameManager != null)
         {
@@ -237,28 +244,17 @@ public class VNDialogueUIManager : DialogueUIManager
         isShowingLeftCharacter = false;
         isShowingRightCharacter = false;
 
-        if (dialogueNode.Speaker == null)
-        {
-            speakerNameText.text = "";
-        }
-        else
-        {
-            Character speaker = dialogueNode.Speaker;
-            speakerNameText.text = speaker.CharacterName;
-            StartCoroutine(SwapCharacterPortrait(
-                speaker.CharacterName,
-                speaker.Position,
-                speaker.Emotion,
-                speaker.Pose
-            ));
-        }
+        SetupSpeaker(dialogueNode.Speaker);
 
         if (dialogueNode.Audio != null)
         {
             StartCoroutine(PlayFXAudio(dialogueNode.Audio));
         }
-        string message = dialogueNode.GetMessage(gameManager.language);
-        SetDialogueText(message);
+        if (gameManager != null)
+        {
+            string message = dialogueNode.GetMessage(gameManager.language);
+            SetDialogueText(message);
+        }
 
         foreach (Character listener in dialogueNode.Listeners)
         {
@@ -302,28 +298,17 @@ public class VNDialogueUIManager : DialogueUIManager
         isShowingLeftCharacter = false;
         isShowingRightCharacter = false;
 
-        if (choiceNode.Speaker == null)
-        {
-            speakerNameText.text = "";
-        }
-        else
-        {
-            Character speaker = choiceNode.Speaker;
-            speakerNameText.text = speaker.CharacterName;
-            StartCoroutine(SwapCharacterPortrait(
-                speaker.CharacterName,
-                speaker.Position,
-                speaker.Emotion,
-                speaker.Pose
-            ));
-        }
+        SetupSpeaker(choiceNode.Speaker);
 
         if (choiceNode.Audio != null)
         {
             StartCoroutine(PlayFXAudio(choiceNode.Audio));
         }
-        string message = choiceNode.GetMessage(gameManager.language);
-        SetDialogueText(message);
+        if (gameManager != null)
+        {
+            string message = choiceNode.GetMessage(gameManager.language);
+            SetDialogueText(message);
+        }
 
         foreach (Character listener in choiceNode.Listeners)
         {
@@ -338,17 +323,20 @@ public class VNDialogueUIManager : DialogueUIManager
             }
         }
 
-        for (int i = 0; i < choiceNode.Choices.Count; i++)
+        if (gameManager != null)
         {
-            GameObject choice = Instantiate(choicePrefab);
-            choice.transform.SetParent(choicesContainer.transform, false);
+            for (int i = 0; i < choiceNode.Choices.Count; i++)
+            {
+                GameObject choice = Instantiate(choicePrefab);
+                choice.transform.SetParent(choicesContainer.transform, false);
 
-            int index = i;
-            UnityEngine.UI.Button button = choice.GetComponent<UnityEngine.UI.Button>();
-            button.onClick.AddListener(() => OnChoiceClick(index, choiceNode.Choices[index]));
+                int index = i;
+                UnityEngine.UI.Button button = choice.GetComponent<UnityEngine.UI.Button>();
+                button.onClick.AddListener(() => OnChoiceClick(index, choiceNode.Choices[index]));
 
-            TextMeshProUGUI textMeshPro = choice.GetComponentInChildren<TextMeshProUGUI>();
-            textMeshPro.text = choiceNode.Choices[index].GetMessage(gameManager.language);
+                TextMeshProUGUI textMeshPro = choice.GetComponentInChildren<TextMeshProUGUI>();
+                textMeshPro.text = choiceNode.Choices[index].GetMessage(gameManager.language);
+            }
         }
         StartCoroutine(ClearCharacterPortraits());
     }
@@ -360,7 +348,7 @@ public class VNDialogueUIManager : DialogueUIManager
             Destroy(child.gameObject);
         }
         NextNode(index);
-        if (historyManager != null)
+        if (historyManager != null && gameManager != null)
         {
             HistoryItem historyItem = new HistoryItem("Player", choice.GetMessage(gameManager.language));
             historyManager.AddItemToHistory(historyItem);
@@ -438,7 +426,7 @@ public class VNDialogueUIManager : DialogueUIManager
 
     private void AddToHistory(Node currentNode)
     {
-        if (historyManager != null)
+        if (historyManager != null && gameManager != null)
         {
             string speakerName = "";
             string message = "";
@@ -448,12 +436,18 @@ public class VNDialogueUIManager : DialogueUIManager
 
             if (dialogueNode != null)
             {
-                speakerName = dialogueNode.Speaker.CharacterName;
+                if (dialogueNode.Speaker != null)
+                {
+                    speakerName = dialogueNode.Speaker.CharacterName;
+                }
                 message = dialogueNode.GetMessage(gameManager.language);
             }
             else if (choiceNode != null)
             {
-                speakerName = choiceNode.Speaker.CharacterName;
+                if (choiceNode.Speaker != null)
+                {
+                    speakerName = choiceNode.Speaker.CharacterName;
+                }
                 message = choiceNode.GetMessage(gameManager.language);
             }
             else
@@ -465,6 +459,27 @@ public class VNDialogueUIManager : DialogueUIManager
                 speakerName = "Narrator";
             HistoryItem historyItem = new HistoryItem(speakerName, message);
             historyManager.AddItemToHistory(historyItem);
+        }
+    }
+
+    /// <summary>
+    /// Sets up speaker name and portrait for dialogue or choice nodes.
+    /// </summary>
+    private void SetupSpeaker(Character speaker)
+    {
+        if (speaker == null)
+        {
+            speakerNameText.text = "";
+        }
+        else
+        {
+            speakerNameText.text = speaker.CharacterName;
+            StartCoroutine(SwapCharacterPortrait(
+                speaker.CharacterName,
+                speaker.Position,
+                speaker.Emotion,
+                speaker.Pose
+            ));
         }
     }
 
@@ -499,7 +514,11 @@ public class VNDialogueUIManager : DialogueUIManager
             {
                 if (leftCharacter != null)
                 {
-                    yield return FadeOut(leftPortrait.GetComponent<CanvasGroup>());
+                    CanvasGroup leftCanvasGroup = leftPortrait.GetComponent<CanvasGroup>();
+                    if (leftCanvasGroup != null)
+                    {
+                        yield return FadeOut(leftCanvasGroup);
+                    }
                 }
                 leftCharacter = characterName;
                 foreach (Transform child in leftPortrait.transform)
@@ -510,10 +529,14 @@ public class VNDialogueUIManager : DialogueUIManager
                 {
                     GameObject characterObject = Instantiate(characters[characterName], leftPortrait.transform);
                     SwapCharacterEmotionAndPose(characterObject, emotion, pose);
-                    yield return FadeIn(leftPortrait.GetComponent<CanvasGroup>());
+                    CanvasGroup leftCanvasGroup = leftPortrait.GetComponent<CanvasGroup>();
+                    if (leftCanvasGroup != null)
+                    {
+                        yield return FadeIn(leftCanvasGroup);
+                    }
                 }
             }
-            else
+            else if (leftPortrait.transform.childCount > 0)
             {
                 GameObject characterObject = leftPortrait.transform.GetChild(0).gameObject;
                 SwapCharacterEmotionAndPose(characterObject, emotion, pose);
@@ -526,7 +549,11 @@ public class VNDialogueUIManager : DialogueUIManager
             {
                 if (rightCharacter != null)
                 {
-                    yield return FadeOut(rightPortrait.GetComponent<CanvasGroup>());
+                    CanvasGroup rightCanvasGroup = rightPortrait.GetComponent<CanvasGroup>();
+                    if (rightCanvasGroup != null)
+                    {
+                        yield return FadeOut(rightCanvasGroup);
+                    }
                 }
                 rightCharacter = characterName;
                 foreach (Transform child in rightPortrait.transform)
@@ -537,10 +564,14 @@ public class VNDialogueUIManager : DialogueUIManager
                 {
                     GameObject characterObject = Instantiate(characters[characterName], rightPortrait.transform);
                     SwapCharacterEmotionAndPose(characterObject, emotion, pose);
-                    yield return FadeIn(rightPortrait.GetComponent<CanvasGroup>());
+                    CanvasGroup rightCanvasGroup = rightPortrait.GetComponent<CanvasGroup>();
+                    if (rightCanvasGroup != null)
+                    {
+                        yield return FadeIn(rightCanvasGroup);
+                    }
                 }
             }
-            else
+            else if (rightPortrait.transform.childCount > 0)
             {
                 GameObject characterObject = rightPortrait.transform.GetChild(0).gameObject;
                 SwapCharacterEmotionAndPose(characterObject, emotion, pose);
@@ -571,7 +602,11 @@ public class VNDialogueUIManager : DialogueUIManager
         {
             if (leftCharacter != null)
             {
-                yield return FadeOut(leftPortrait.GetComponent<CanvasGroup>());
+                CanvasGroup leftCanvasGroup = leftPortrait.GetComponent<CanvasGroup>();
+                if (leftCanvasGroup != null)
+                {
+                    yield return FadeOut(leftCanvasGroup);
+                }
             }
             leftCharacter = null;
             foreach (Transform child in leftPortrait.transform)
@@ -583,7 +618,11 @@ public class VNDialogueUIManager : DialogueUIManager
         {
             if (rightCharacter != null)
             {
-                yield return FadeOut(rightPortrait.GetComponent<CanvasGroup>());
+                CanvasGroup rightCanvasGroup = rightPortrait.GetComponent<CanvasGroup>();
+                if (rightCanvasGroup != null)
+                {
+                    yield return FadeOut(rightCanvasGroup);
+                }
             }
             rightCharacter = null;
             foreach (Transform child in rightPortrait.transform)
