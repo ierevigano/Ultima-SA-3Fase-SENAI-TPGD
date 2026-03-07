@@ -1,0 +1,16 @@
+{
+    "name": "VNEngine",
+    "rootNamespace": "VisualNovelEngine",
+    "references": [
+        "DialogueSystem"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

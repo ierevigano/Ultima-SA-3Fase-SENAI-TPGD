@@ -57,7 +57,7 @@ namespace DialogueSystem
     {
         public void Invoke(DialogueEvent dialogueEvent)
         {
-            // TODO:Implement event invocation
+            // TODO: Implement event invocation
         }
     }
 }
